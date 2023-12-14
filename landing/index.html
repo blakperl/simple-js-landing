@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/landing/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>js landing</title>
+</head>
+<body>
+    <!-- loading -->
+    <div>
+
+    </div>
+
+    <!-- nav -->
+   <div class="animload">
+    <nav
+    class="navbar fixed z-50  top-0 flex h-12 w-full lg:h-12 lg:py-8">
+    <div class="container mx-auto flex items-center justify-between lg:px-6">
+      <a class="italic text-purple-700 py-4 text-5xl font-bold ml-5" href="#">brand</a>
+            <div id="navbutton" class="wrapper-menu flex lg:hidden mr-4">
+                <div class="line-menu half start"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu half end"></div>
+            </div>
+        <div class="mx-auto hidden w-full gap-6 justify-end lg:flex"
+            id="">
+            <ul
+                class="main-nav-hover-fade-inactive mt-4 flex flex-col p-4 text-black md:mt-0 md:flex-row md:space-x-8 md:text-[15px]">
+                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#"><i class='bx bx-home text-xl mr-2 text-center'></i>Home</a></li>
+                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#about"><i class='bx bx-abacus text-xl mr-2 text-center'></i> About</a></li>
+                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#services"> <i class='bx bxs-user text-xl mr-2 text-center'></i> Service</a></li>
+                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#news"><i class='bx bxs-news text-xl mr-2 text-center' ></i>News</a></li>
+
+            </ul>
+        </div>
+    </div>
+  </nav>
+   </div>
+<div id="landingNav" class="h-0 w-full items-center justify-between rounded-b-3xl bg-white lg:hidden"
+    id="navbar-sticky">
+    <div class="btn-group flex pb-4 pl-3 pt-9">
+        <a href=""
+            class="ml-6 mr-3 flex w-fit items-center rounded-md bg-main-900 px-10 py-4 text-center text-sm text-white duration-700 ease-in-out hover:-translate-y-[1px] md:mr-0">Login</a>
+    </div>
+    <ul class="mt-4 flex flex-col p-6 text-base text-black">
+        <li>
+            <a  class="hover:z-100 block py-2 pl-3 pr-4 " aria-current="page" href="#"> <i class='bx bx-home text-xl mr-2 text-center'> </i>Home</a>
+        </li>
+        <li>
+            <a  class="block py-5 pl-3 pr-4"  href="#about"> <i class='bx bx-abacus text-xl mr-2 text-center' > </i>About</a>
+        </li>
+        <li>
+            <a class="block py-5 pl-3 pr-4 " href="#services"> <i class='bx bxs-user text-xl mr-2 text-center'> </i>Services</a>
+        </li>
+        <li>
+            <a class="block py-5 pl-3 pr-4 " href="#news"> <i class='bx bxl-squarespace text-xl mr-2 text-center'> </i>News</a>
+        </li>
+    </ul>
+
+</div>
+
+<!-- section1  -->
+<section>
+  <div class="main1 flex flex-col items-center justify-center h-full">
+    <p class="mb-4 text-white font-semibold lg:text-5xl text-3xl italic">Ready to begin your journey?</p>
+    <hr class="mb-4">
+    <p class="mb-4 text-white italic  text-2xl">Feel free to look around</p>
+</div>
+</section>
+
+<!-- section 2 -->
+<section class="bg-white lg:px-10 px-4 py-14" id="services">
+<p class="font-bold lg:text-5xl text-3xl text-center mb-4">Our services</p>
+<p class="text-lg leading-6 lg:text-center mb-8 lg:block hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magni, <br>
+   illum omnis consectetur corporis, accusantium alias, cupiditate  iure <br> doloribus ratione dignissimos
+    laborum. Itaque velit laboriosam incidunt <br> tempora rem fugiat cumque?
+</p>
+<p class="text-lg leading-6  mb-8 lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magni,
+  illum omnis consectetur corporis, accusantium alias, cupiditate  iure doloribus ratione dignissimos
+   laborum. Itaque velit laboriosam incidunt tempora rem fugiat cumque?
+</p>
+<div class="grid lg:grid-cols-3 grid-cols-1 grid-loaded gap-5">
+  <!-- item1 -->
+<div class=" flex flex-col justify-center items-center py-6 space-y-6 transition hover:shadow-md hover:bg-white hover:rounded-lg card">
+  <i class='bx bxs-camera text-6xl '></i>
+ <p class="text-2xl ">Photography</p>
+ <p class="leading-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum enim, commodo in sapien eget, accumsan maximus metus.</p>
+</div>
+<!-- item2 -->
+<div class=" flex flex-col items-center  space-y-6 py-6 transition hover:shadow-md hover:bg-white hover:rounded-lg card">
+  <i class='bx bx-headphone text-6xl'></i>
+ <p class="text-2xl ">Music</p>
+ <p class="leading-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum enim, commodo in sapien eget, accumsan maximus metus.</p>
+</div>
+<!-- item3 -->
+<div class=" flex flex-col items-center space-y-6 py-6 transition hover:shadow-md hover:bg-white hover:rounded-lg card">
+  <i class='bx bxl-html5 text-6xl' ></i>
+ <p class="text-2xl ">Web Development</p>
+ <p class="leading-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum enim, commodo in sapien eget, accumsan maximus metus.</p>
+</div>
+</div>
+</section>
+
+<!-- section3 -->
+<section class="bg-black h-[80vh] lg:px-10 px-4 " id="about">
+<div class="grid lg:grid-cols-2 grid-cols-1 gap-6 text-content lg:py-0 py-8">
+  <div class="text-white flex justify-center items-center fade-in-left ">
+    <div class="">
+      <p class="text-3xl mb-3 font-bold tracking-wide text-white">ABOUT US</p>
+    <p class="mb-6 hidden text-4xl font-bold lg:block">Lorem ipsum dolor
+      sit amet consectetur adipisicing elit
+    </p>
+    <p class="mb-4 text-2xl font-bold lg:hidden">Lorem ipsum dolor
+      sit amet consectetur adipisicing elit
+    </p>
+    <p class="mb-6  text-lg leading-7  lg:w-[480px] lg:text-sm lg:leading-5">Lorem ipsum dolor
+       sit amet consectetur adipisicing elit. Mollitia aut, pariatur accusantium unde obcaecati nihil 
+       recusandae nostrum, similique hic vitae ab illum provident et. Voluptatibus, adipisci iste? 
+       Voluptatem, quos voluptates.
+    </p>
+    <div class=''>
+        <button class="items-left flex rounded-md bg-[#449B01D9] px-6 py-2 font-semibold text-white">
+            Learn more
+        </button>
+    </div>
+    </div>
+  </div>
+  <div class="fade-in-right">
+    <img src="/landing/images/01.jpg" alt="">
+  </div>
+</div>
+</section>
+    <!-- section4 -->
+    <section class="lg:px-20 lg:py-16 px-4 py-6 bg-white" id="team" >
+ <p class="text-center mb-8 font-bold tracking-wide text-3xl">Our Team</p>
+<div class=" p-8 " id="projects">
+ 
+  <div class="lg:flex gap-8">
+    <div class="lg:w-1/3 mb-4">
+      <!-- <a href="#taiwo" onclick="toggleCollapse('taiwo')">
+        <img src="images/profile.jpg" class="rounded-full imaged mb-4" alt=''/>
+      </a> -->
+        <div onclick="toggleCollapse('taiwo')" >
+          <img src="images/profile.jpg" class="rounded-full imaged mb-4" alt=''/>
+        </div>
+      <div class=" collapse text-black" id="taiwo">
+        <p class="mb-2 text-center">Guitarist and Lead Vocalist</p>
+        <p class="mb-2 text-center">Loves long walks on the beach</p>
+        <p class="text-center">Member since 1998</p>
+      </div>
+    </div>
+
+    <div class="lg:w-1/3 mb-4">
+      <!-- <a href="#kehinde" onclick="toggleCollapse('kehinde')">
+        <img src="images/profile.jpg" class="rounded-full imaged mb-4" alt=''/>
+      </a> -->
+      <div onclick="toggleCollapse('kehinde')">
+         <img src="images/profile.jpg" class="rounded-full imaged mb-4" alt=''/>
+      </div>
+      <div class="collapse text-black " id="kehinde">
+        <p class="mb-2 text-center">Guitarist and Lead Vocalist</p>
+        <p class="mb-2 text-center">Loves long walks on the beach</p>
+        <p class="text-center">Member since 1998</p>
+      </div>
+    </div>
+
+    <div class="lg:w-1/3 mb-4">
+      <!-- <a href="#ahmad" onclick="toggleCollapse('ahmad')">
+        <img src="images/profile.jpg" class="rounded-full imaged  mb-4" alt=''/>
+      </a> -->
+      <div onclick="toggleCollapse('ahmad')">
+        <img src="images/profile.jpg" class="rounded-full imaged  mb-4" alt=''/>
+      </div>
+      <div class=" text-black collapse" id="ahmad">
+        <p class="mb-2 text-center">Guitarist and Lead Vocalist</p>
+        <p class="mb-2 text-center">Loves long walks on the beach</p>
+        <p class="text-center">Member since 1998</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <!-- section5 -->
+    <section id="news">
+      <div class="flex justify-center items-center">
+        <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+          <div role="main" class="flex flex-col items-center justify-center">
+            <h1 class="text-4xl font-semibold leading-9 text-center text-gray-800 dark:text-gray-50">News Update</h1>
+            <p class="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
+          </div>
+          <div class="lg:flex h-full items-stretch md:mt-12 mt-8">
+            <div class="lg:w-1/2">
+              <div class="sm:flex items-center justify-between mt-8 xl:gap-x-8 gap-x-6">
+                <div class="sm:w-1/2 relative hovereffect">
+                  
+                  <div>
+                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0 z-50">12 April 2021</p>
+                    <div class="absolute bottom-0 left-0 p-6 z-50">
+                      <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                      <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                      <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline">
+                        <p class="pr-2 text-sm font-medium leading-none">Read More </p>
+                      </a>
+                    </div>
+                  </div>
+                  <img src="/landing/images/img1.png" class="w-full" alt="chair" />
+                </div>
+                <div class="sm:w-1/2 sm:mt-0 mt-4 relative hovereffect">
+                  <div >
+                    <p class="p-6 text-xs font-medium leading-3  text-white absolute top-0 right-0 z-50">12 April 2021</p>
+                    <div class="absolute bottom-0 left-0 p-6 z-50">
+                      <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                      <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                      <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline">
+                        <p class="pr-2 text-sm font-medium leading-none">Read More </p>
+                      </a>
+                    </div>
+                  </div>
+                  <img src="/landing/images/img2.png" class="w-full" alt="wall design" />
+                </div>
+              </div>
+              <div class="relative card animate__animated animate__fadeIn animate__delay-8s ">
+                <div>
+                  <p class="md:p-10 p-4 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                  <div class="absolute bottom-0 left-0 md:p-10 p-6">
+                    <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                    <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                    <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline">
+                      <p class="pr-2 text-sm font-medium leading-none">Read More </p>
+                    </a>
+                  </div>
+                </div>
+                <img src="/landing/images/img3.png" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block" />
+                <img class="w-full mt-4 sm:hidden" src="/landing/images/img3small.png" alt="sitting place" />
+              </div>
+            </div>
+            <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-10 lg:flex flex-col justify-between">
+              <div class="relative  card animate__animated animate__fadeIn animate__delay-8s">
+                <div>
+                  <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                  <div class="absolute bottom-0 left-0 md:p-10 p-6">
+                    <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                    <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                    <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline ">
+                      <p class="pr-2 text-sm font-medium leading-none">Read More  </p>
+                    </a>
+                  </div>
+                </div>
+                <img src="/landing/images/img4big.png" alt="sitting place" class="w-full sm:block hidden" />
+                <img class="w-full sm:hidden" src="/landing/images/img4.png" alt="sitting place" />
+              </div>
+              <div class="sm:flex items-center  justify-between xl:gap-x-8 gap-x-6 md:mt-12 mt-12">
+                <div class="relative w-full hovereffect">
+                  <div>
+                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0 z-50">12 April 2021</p>
+                    <div class="absolute bottom-0 left-0 p-6 z-50">
+                      <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                      <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                      <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline">
+                        <p class="pr-2 text-sm font-medium leading-none flex items-center justify-center hover:underline">Read More  </p>
+                       
+                      </a>
+                    </div>
+                  </div>
+                  <img src="/landing/images/img5.png" class="w-full" alt="chair" />
+                </div>
+                <div class="relative w-full sm:mt-0 mt-4 hovereffect">
+                  <div>
+                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0 z-50">12 April 2021</p>
+                    <div class="absolute bottom-0 left-0 p-6 z-50">
+                      <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                      <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                      <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-300 hover:underline ">
+                        <p class="pr-2 text-sm font-medium leading-none flex items-center justify-center ">Read More </p>
+                        
+                      </a>
+                    </div>
+                  </div>
+                  <img src="/landing/images/img6.png" class="w-full" alt="wall design" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 6 -->
+    <footer class="bg-footer py-12 px-8">
+<div class="flex flex-wrap text-left lg:text-left">
+  <div class="w-full lg:w-6/12 px-4">
+    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+      Find us on any of these platforms, we respond 1-2 business days.
+    </h5>
+    <div class="mt-6 lg:mb-0 mb-6">
+      <button class="bg-white text-purple-500 shadow-lg font-normal h-8 w-8 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+        <i class='bx bxl-twitter text-xl'></i>
+      </button>
+        <button class="bg-white text-purple-500 shadow-lg font-normal h-8 w-8 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          <i class='bx bxl-facebook-square' ></i>
+        </button>
+        <button class="bg-white text-purple-500 shadow-lg font-normal h-8 w-8 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          <i class='bx bxl-linkedin' ></i>
+        </button>
+        <button class="bg-white text-purple-500 shadow-lg font-normal h-8 w-8 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          <i class='bx bxl-github' ></i>
+       </button>
+    </div>
+  </div>
+  <div class="w-full lg:w-6/12 px-4">
+    <div class="flex flex-wrap items-top mb-6">
+      <div class="w-full lg:w-4/12 px-4 ml-auto">
+        <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="#about">About Us</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="#news">Blog</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="#services">Services</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="">Products</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-full lg:w-4/12 px-4">
+        <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="">MIT License</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="text-blueGray-600 hover:text-purple-500 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<hr class="my-4 w-full border-purple-500">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2021</span><a href="" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
+          <a href="" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script src="/landing/script.js"></script>
+</body>
+</html>
