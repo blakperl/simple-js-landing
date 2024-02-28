@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/landing/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>js landing</title>
 </head>
@@ -28,11 +28,11 @@
         <div class="mx-auto hidden w-full gap-6 justify-end lg:flex"
             id="">
             <ul
-                class="main-nav-hover-fade-inactive mt-4 flex flex-col p-4 text-black md:mt-0 md:flex-row md:space-x-8 md:text-[15px]">
-                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#"><i class='bx bx-home text-xl mr-2 text-center'></i>Home</a></li>
-                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#about"><i class='bx bx-abacus text-xl mr-2 text-center'></i> About</a></li>
-                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#services"> <i class='bx bxs-user text-xl mr-2 text-center'></i> Service</a></li>
-                <li class="px-4"><a class="nav-link flex justify-center items-center" href="#news"><i class='bx bxs-news text-xl mr-2 text-center' ></i>News</a></li>
+                class=" nav__links main-nav-hover-fade-inactive mt-4 flex flex-col p-4 text-black md:mt-0 md:flex-row md:space-x-8 md:text-[15px]">
+                <li class="nav__item px-4"><a class="nav-link flex justify-center items-center" href="#home"><i class='bx bx-home text-xl mr-2 text-center'></i>Home</a></li>
+                <li class="nav__item px-4"><a class="nav-link flex justify-center items-center" href="#about"><i class='bx bx-abacus text-xl mr-2 text-center'></i> About</a></li>
+                <li class="nav__item px-4"><a class="nav-link flex justify-center items-center" href="#services"> <i class='bx bxs-user text-xl mr-2 text-center'></i> Service</a></li>
+                <li class="nav__item px-4"><a class="nav-link flex justify-center items-center" href="#news"><i class='bx bxs-news text-xl mr-2 text-center' ></i>News</a></li>
 
             </ul>
         </div>
@@ -63,7 +63,7 @@
 </div>
 
 <!-- section1  -->
-<section >
+<section  id="home">
   <div class="main1 flex flex-col items-center justify-center h-full">
     <p class="mb-4 text-white font-semibold lg:text-5xl text-3xl italic">Ready to begin your journey?</p>
     <hr class="mb-4">
@@ -129,7 +129,7 @@
     </div>
   </div>
   <div class="fade-in-right">
-    <img src="/landing/images/01.jpg" alt="">
+    <img src="/images/01.jpg" alt="">
   </div>
 </div>
 </section>
@@ -206,7 +206,7 @@
                       </a>
                     </div>
                   </div>
-                  <img src="/landing/images/img1.png" class="w-full" alt="chair" />
+                  <img src="/images/img1.png" class="w-full" alt="chair" />
                 </div>
                 <div class="sm:w-1/2 sm:mt-0 mt-4 relative hovereffect">
                   <div >
@@ -219,7 +219,7 @@
                       </a>
                     </div>
                   </div>
-                  <img src="/landing/images/img2.png" class="w-full" alt="wall design" />
+                  <img src="/images/img2.png" class="w-full" alt="wall design" />
                 </div>
               </div>
               <div class="relative card animate__animated animate__fadeIn animate__delay-8s ">
@@ -233,8 +233,8 @@
                     </a>
                   </div>
                 </div>
-                <img src="/landing/images/img3.png" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block" />
-                <img class="w-full mt-4 sm:hidden" src="/landing/images/img3small.png" alt="sitting place" />
+                <img src="/images/img3.png" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block" />
+                <img class="w-full mt-4 sm:hidden" src="/images/img3small.png" alt="sitting place" />
               </div>
             </div>
             <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-10 lg:flex flex-col justify-between">
@@ -249,8 +249,8 @@
                     </a>
                   </div>
                 </div>
-                <img src="/landing/images/img4big.png" alt="sitting place" class="w-full sm:block hidden" />
-                <img class="w-full sm:hidden" src="/landing/images/img4.png" alt="sitting place" />
+                <img src="/images/img4big.png" alt="sitting place" class="w-full sm:block hidden" />
+                <img class="w-full sm:hidden" src="/images/img4.png" alt="sitting place" />
               </div>
               <div class="sm:flex items-center  justify-between xl:gap-x-8 gap-x-6 md:mt-12 mt-12">
                 <div class="relative w-full hovereffect">
@@ -265,7 +265,7 @@
                       </a>
                     </div>
                   </div>
-                  <img src="/landing/images/img5.png" class="w-full" alt="chair" />
+                  <img src="/images/img5.png" class="w-full" alt="chair" />
                 </div>
                 <div class="relative w-full sm:mt-0 mt-4 hovereffect">
                   <div>
@@ -279,7 +279,7 @@
                       </a>
                     </div>
                   </div>
-                  <img src="/landing/images/img6.png" class="w-full" alt="wall design" />
+                  <img src="/images/img6.png" class="w-full" alt="wall design" />
                 </div>
               </div>
             </div>
@@ -360,6 +360,6 @@
       </div>
     </div>
     </footer>
-    <script src="/landing/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

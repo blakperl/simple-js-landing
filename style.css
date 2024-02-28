@@ -166,7 +166,7 @@
 }
 
 .main1{
-  background-image: url("/landing/images/Wevio-Global-Business-Development-Company-03.jpg");
+  background-image: url("/images/Wevio-Global-Business-Development-Company-03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding:70px;
@@ -193,7 +193,7 @@ hr{
 } 
 
 #projects{
-    background:url("/landing/images/company-background-7.jpg");
+    background:url("/images/company-background-7.jpg");
  
  filter:drop-shadow(2px 2px 4px black);
 }
